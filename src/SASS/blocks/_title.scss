@@ -1,0 +1,12 @@
+.title {
+  font-weight: bold;
+  font-size: 40px;
+  &_fz48 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  &__subtitle {
+    font-size: 20px;
+    margin-top: 14px;
+  }
+}

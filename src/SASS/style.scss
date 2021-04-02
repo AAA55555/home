@@ -2,12 +2,21 @@
   margin: 0;
   padding: 0;
   color: #3b3d46;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
 }
 
 .container {
-  width: 1170px;
+  width: 1170px; //TODO не работает сдвиг из-за этого нормально
   margin: 0 auto;
   border: 1px solid rgb(174, 172, 172);
 }
 
-@import 'blocks/nav';
+@import 'base/variables';
+@import 'blocks/title';
+
+@import 'blocks/button';
+@import 'blocks/header';
+@import 'blocks/plus';
