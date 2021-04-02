@@ -6,6 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
+const del = require('del');
 
 gulp.task('server', function() {
 
@@ -67,5 +68,13 @@ gulp.task('images', function () {
         .pipe(gulp.dest("dist/img"))
         .pipe(browserSync.stream());
 });
+
+//clean - dist
+
+gulp.task('clean:dist', function () {
+  return del(['dist/**/*']);
+});
+
+gulp.task('del', gulp.series('clean:dist'));
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images'));

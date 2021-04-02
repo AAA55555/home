@@ -9,14 +9,14 @@
 }
 
 .container {
-  width: 1170px; //TODO не работает сдвиг из-за этого нормально
+  max-width: 1170px; //TODO не работает сдвиг из-за этого нормально
   margin: 0 auto;
-  border: 1px solid rgb(174, 172, 172);
+  // border: 1px solid rgb(174, 172, 172);
 }
 
 @import 'base/variables';
 @import 'blocks/title';
 
 @import 'blocks/button';
+@import 'blocks/nav';
 @import 'blocks/header';
-@import 'blocks/plus';

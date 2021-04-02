@@ -1,19 +1,13 @@
-.header {
-  // .header__btn
-
-  &__btn {
-    width: 170px;
-    height: 43px;
-    border: 1px solid $main_color;
-    background: #fff;
-    color: $main_color;
-  }
-}
 .btn {
   text-align: center;
   display: block;
   cursor: pointer;
   font-weight: bold;
+  border: none;
   border-radius: 5px;
   outline: none;
+  &_blue {
+    background: $main_color;
+    color: #FFFFFF;
+  }
 }
