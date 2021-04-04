@@ -9,14 +9,23 @@
 }
 
 .container {
-  max-width: 1170px; //TODO не работает сдвиг из-за этого нормально
+  max-width: 1170px;
   margin: 0 auto;
   // border: 1px solid rgb(174, 172, 172);
 }
 
 @import 'base/variables';
 @import 'blocks/title';
+@import 'blocks/modal';
 
 @import 'blocks/button';
 @import 'blocks/nav';
 @import 'blocks/header';
+@import 'blocks/advantage';
+@import 'blocks/form';
+@import 'blocks/answers';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+
+
+//TODO показать модалку; зафиксить навигацию; поставить выпадение аккардеон; адаптив; слайдер

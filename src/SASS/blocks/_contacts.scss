@@ -1,0 +1,45 @@
+.contacts {
+  
+  // .contacts__wrapper
+
+  &__wrapper {
+    margin-top: 97px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .contacts__address
+
+  &__address {
+    a {
+      line-height: 22px;
+      font-size: 14px;
+      color: $main_color;
+      border-bottom: 1px dashed $main_color;
+      text-decoration: none;
+    }
+  }
+
+  // .contacts__email
+
+  &__email {
+    a {
+      line-height: 22px;
+      font-size: 14px;
+      color: $main_color;
+      border-bottom: 1px dashed $main_color;
+      text-decoration: none;
+    }
+  }
+
+  // .contacts__watch
+
+  &__watch {
+    div {
+      line-height: 22px;
+      font-size: 14px;
+    }
+  }
+}
+

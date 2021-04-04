@@ -1,16 +1,16 @@
 .header {
-  background: url('../img/main_bg.jpg') 33% -270% / cover no-repeat;
-  height: calc(100vh - 82px);
-  width: 100%;
+  background: url('../img/main_bg.jpg') center center / cover no-repeat;
+  max-height: 650px;
+  height: 100%;
   &__wrapper {
     max-width: 700px;
     width: 100%;
-    height: calc(100vh - 82px);
     background: #ffffff;
     // opacity: 0.95;
     padding-top: 60px;
     padding-right: 50px;
     padding-left: 50px;
+    padding-bottom: 90px;
     position: relative;
   }
 
