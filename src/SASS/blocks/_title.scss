@@ -1,12 +1,36 @@
 .title {
-  font-weight: bold;
   font-size: 40px;
+  &_fz20 {
+    font-size: 20px;
+  }
+  &_fz24 {
+    font-size: 24px;
+  }
+  &_fz28 {
+    line-height: 28px;
+  }
+  &_fz40 {
+    font-size: 40px;
+    line-height: 50px;
+  }
   &_fz48 {
     font-size: 48px;
     line-height: 60px;
   }
   &__subtitle {
-    font-size: 20px;
     margin-top: 14px;
+  }
+  &_center {
+    text-align: center;
+    margin-top: 20px;
+  }
+  &_fw600 {
+    font-weight: 600;
+  }
+  &_fw700 {
+    font-weight: 700;
+  }
+  &_lh26 {
+    line-height: 26px;
   }
 }
