@@ -20,6 +20,7 @@
   // .answers__header
 
   &__header {
+    margin-top: 10px;
     padding: 15px 90px 15px 20px;
     display: flex;
     align-items: center;
@@ -28,6 +29,9 @@
     width: 100%;
     background: #f1f7f8;
     border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.4s;
     p {
       line-height: 24px;
       margin-left: 30px;
@@ -57,6 +61,7 @@
     background-color: $main_color;
     position: relative;
     border-radius: 10px;
+    transition: all .3s;
     &::after {
       content: '';
       display: block;
@@ -74,12 +79,17 @@
   // .answers__descr
 
   &__descr {
-    padding: 51px 90px 35px 90px;
     line-height: 26px;
     box-shadow: 0px 3px 20px #eaecef;
     border-radius: 0 0 10px 10px;
     transform: translateY(-16px);
     z-index: -5;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    p {
+      padding: 51px 90px 35px 90px;
+    }
   }
   .title {
     // .title__subtitle
@@ -96,9 +106,9 @@
       margin: 0;
     }
   }
+}
 
-  .hidden {
-  }
-  .visible {
-  }
+.active-plus {
+  transform: rotate(-45deg);
+  transition: all .3s;
 }

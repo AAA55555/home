@@ -1,0 +1,16 @@
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  width: 35px;
+  height: 35px;
+  svg {
+    width: 100%;
+    fill: #ced2d3;
+  }
+}
+
+.active-pageup {
+  display: block;
+}
