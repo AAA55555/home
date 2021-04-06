@@ -39,6 +39,9 @@
     div {
       line-height: 22px;
       font-size: 14px;
+      &:nth-child(1) {
+        font-size: 16px;
+      }
     }
   }
 }

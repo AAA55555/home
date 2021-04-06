@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
       const scrollTarget = document.getElementById(href);
 
-      const topOffset = 0;
+      const topOffset = 82;
       const elementPosition = scrollTarget.getBoundingClientRect().top;
       const offsetPosition = elementPosition - topOffset;
 
@@ -45,7 +45,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('scroll', () => {
     let promo = document.querySelector('.pageup'),
-      promoHeight = 735;
+      promoHeight = window.innerHeight + 25;
+      console.log(promoHeight);
     let i = promo.getBoundingClientRect().top + pageYOffset;
     if (i > promoHeight) {
       promo.classList.add('active-pageup');

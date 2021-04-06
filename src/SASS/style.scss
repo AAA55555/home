@@ -6,21 +6,20 @@
   font-size: 16px;
   font-weight: 400;
   box-sizing: border-box;
+  outline: none;
 }
 
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  // border: 1px solid rgb(174, 172, 172);
 }
 
-
+@import 'libs/fonts.css';
 @import 'base/variables';
 @import 'blocks/title';
 @import 'blocks/modal';
 
 @import 'blocks/button';
-@import 'blocks/nav';
 @import 'blocks/header';
 @import 'blocks/advantage';
 @import 'blocks/form';
@@ -28,6 +27,5 @@
 @import 'blocks/contacts';
 @import 'blocks/footer';
 @import 'blocks/pageup';
-
 
 //TODO показать модалку; зафиксить навигацию; поставить выпадение аккардеон; адаптив; слайдер
