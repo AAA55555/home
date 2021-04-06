@@ -46,7 +46,6 @@ window.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', () => {
     let promo = document.querySelector('.pageup'),
       promoHeight = window.innerHeight + 25;
-      console.log(promoHeight);
     let i = promo.getBoundingClientRect().top + pageYOffset;
     if (i > promoHeight) {
       promo.classList.add('active-pageup');
@@ -55,4 +54,6 @@ window.addEventListener('DOMContentLoaded', function () {
       promo.classList.remove('active-pageup');
     }
   });
+
+  //nav
 });

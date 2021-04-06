@@ -14,7 +14,15 @@
   margin: 0 auto;
 }
 
-@import 'libs/fonts.css';
+.hide {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+@import 'libs/fonts';
 @import 'base/variables';
 @import 'blocks/title';
 @import 'blocks/modal';
@@ -27,5 +35,4 @@
 @import 'blocks/contacts';
 @import 'blocks/footer';
 @import 'blocks/pageup';
-
-//TODO показать модалку; зафиксить навигацию; поставить выпадение аккардеон; адаптив; слайдер
+@import 'blocks/media';

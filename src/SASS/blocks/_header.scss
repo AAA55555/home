@@ -10,6 +10,9 @@
     position: fixed;
     width: 100%;
     z-index: 5;
+    &__close {
+      display: none;
+    }
     // .header__wrapper
     &__wrapper {
       display: grid;
@@ -34,12 +37,12 @@
         background-image: linear-gradient(currentColor, currentColor);
         background-position: 0% 100%;
         background-repeat: no-repeat;
-        background-size: 0% 2px;
+        background-size: 0% 1px;
         transition: background-size 0.3s;
       }
 
       a:hover {
-        background-size: 100% 2px;
+        background-size: 100% 1px;
       }
     }
 
@@ -174,6 +177,9 @@
     line-height: 28px;
     color: $main_color;
     text-decoration: none;
+    &__svg {
+      display: none;
+    }
   }
 
   span {
