@@ -3,65 +3,11 @@
   margin-top: 82px;
   max-height: 650px;
   height: 100%;
-  .nav {
-    margin-top: -82px;
-    height: 82px;
-    background-color: #fff;
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-    &__close {
-      display: none;
-    }
-    // .header__wrapper
-    &__wrapper {
-      display: grid;
-      grid-template:
-        82px / 125px minmax(auto, 74px) 470px minmax(auto, 165px) 145px minmax(
-          auto,
-          20px
-        )
-        170px;
-      align-items: center;
-    }
-
-    // .header__nav
-
-    &__items {
-      display: flex;
-      justify-content: space-between;
-      grid-column: 3/4;
-      list-style-type: none;
-      a {
-        text-decoration: none;
-        background-image: linear-gradient(currentColor, currentColor);
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 1px;
-        transition: background-size 0.3s;
-      }
-
-      a:hover {
-        background-size: 100% 1px;
-      }
-    }
-
-    // .header__btn
-
-    &__btn {
-      grid-column: 7/8;
-      width: 170px;
-      height: 43px;
-      border: 1px solid $main_color;
-      background: #fff;
-      color: $main_color;
-    }
-  }
 
   &__wrapper {
     max-width: 700px;
     width: 100%;
-    background: #ffffff;
+    background-color: #F5F5F5;
     // opacity: 0.95;
     padding-top: 60px;
     padding-right: 50px;
@@ -78,6 +24,7 @@
       font-size: 48px;
       line-height: 60px;
       font-weight: bold;
+      display: block;
     }
   }
 
@@ -148,45 +95,4 @@
   border-right: 30px solid #0099c1;
   border-bottom: 0px solid transparent;
   border-left: 0px solid transparent;
-}
-.logo {
-  // .logo__link
-
-  &__link {
-    display: flex;
-    max-width: 125px;
-    max-height: 70px;
-    width: 100%;
-    height: 100%;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
-}
-// .header__wrapper-phone
-
-.phone__wrapper {
-  display: block;
-  grid-column: 5/6;
-
-  .phone {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
-    color: $main_color;
-    text-decoration: none;
-    &__svg {
-      display: none;
-    }
-  }
-
-  span {
-    font-size: 14px;
-    line-height: 22px;
-    opacity: 0.6;
-    display: block;
-    text-align: right;
-  }
 }
