@@ -9,7 +9,7 @@
 }
 @media (min-width: 992px) and (max-width: 1030px) {
   .container {
-    padding: 0 8px;
+    padding: 0 15px;
   }
   .header {
     &__wrapper {
@@ -226,7 +226,7 @@
         padding: 0;
       }
       &__wrapper {
-        padding: 30px 8px 62px 8px !important;
+        padding: 30px 15px 62px 15px !important;
         border-top: 1px solid #e6e6e6;
         background: linear-gradient(
             180deg,

@@ -28,3 +28,36 @@
     width: 100%;
   }
 }
+
+
+
+
+.footer {
+  margin-top: 150px;
+  &__wrapper {
+    .logo {
+      &__link {
+        max-width: 199px;
+        width: 100%;
+        img {
+          width: 100%;
+        }
+        div {
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+    .phone {
+      &__wrapper {
+        a {
+          font-size: 24px;
+        }
+        span {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
