@@ -1,4 +1,4 @@
-@media screen and (min-width: 992px) and (max-width: 1150px) {
+@media (min-width: 992px) and (max-width: 1160px) {
   .footer {
     &__wrapper {
       .logo {
@@ -11,13 +11,18 @@
           div {
             font-size: 12px;
             line-height: 20px;
+            span {
+              font-size: 12px;
+              line-height: 20px;
+              display: block;
+            }
           }
         }
       }
       .phone {
         &__wrapper {
           .phone {
-            font-size: 24px;
+            font-size: 20px;
           }
           span {
             font-size: 14px;
