@@ -42,9 +42,12 @@
       display: block;
       max-width: 232px;
       width: 100%;
+      height: auto;
+      max-height: none;
       img {
         max-width: 199px;
         width: 100%;
+        height: auto;
       }
       div {
         font-size: 14px;
@@ -53,6 +56,9 @@
         margin-top: 10px;
         font-style: 14px;
         line-height: 22px;
+        span {
+          font-size: 14px;
+        }
       }
     }
   }

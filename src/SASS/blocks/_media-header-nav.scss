@@ -1,10 +1,7 @@
-@media (max-width: 1200px) {
-  .container {
-    padding: 0 10px;
-  }
-  .header {
-    .btn {
-    }
+@media (max-width: 1260px) {
+  
+  .pageup {
+    display: none;
   }
 }
 @media (min-width: 992px) and (max-width: 1030px) {
@@ -206,62 +203,61 @@
       line-height: 22px;
     }
   }
-
-  @media (min-width: 320px) and (max-width: 575px) {
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .container {
+    min-width: 290px;
+    width: 100%;
+  }
+  .nav {
+    height: 66px;
+    margin-top: -66px;
     .container {
-      min-width: 290px;
-      width: 100%;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
     }
-    .nav {
-      height: 66px;
-      margin-top: -66px;
-      .container {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+  }
+  .header {
+    margin-top: 66px;
+    .container {
+      padding: 0;
+    }
+    &__wrapper {
+      padding: 30px 15px 62px 15px !important;
+      border-top: 1px solid #e6e6e6;
+      background: linear-gradient(
+          180deg,
+          #ffffff 43.21%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        #f1f7f8;
+      h2 {
+        display: none;
+      }
+      &-items {
+        grid-template: repeat(5, minmax(44px, auto)) 60px/ 1fr !important;
+        margin-top: 30px;
+        column-gap: 20px;
       }
     }
-    .header {
-      margin-top: 66px;
-      .container {
-        padding: 0;
+    &__btn {
+      margin-top: 10px;
+    }
+    &__item {
+      &:nth-child(2) {
+        order: 4;
       }
-      &__wrapper {
-        padding: 30px 15px 62px 15px !important;
-        border-top: 1px solid #e6e6e6;
-        background: linear-gradient(
-            180deg,
-            #ffffff 43.21%,
-            rgba(255, 255, 255, 0) 100%
-          ),
-          #f1f7f8;
-        h2 {
-          display: none;
-        }
-        &-items {
-          grid-template: repeat(5, minmax(44px, auto)) 60px/ 1fr !important;
-          margin-top: 30px;
-          column-gap: 20px;
-        }
+      &:nth-child(3) {
+        order: 2;
       }
-      &__btn {
-        margin-top: 10px;
+      &:nth-child(4) {
+        order: 5;
       }
-      &__item {
-        &:nth-child(2) {
-          order: 4;
-        }
-        &:nth-child(3) {
-          order: 2;
-        }
-        &:nth-child(4) {
-          order: 5;
-        }
-        &:nth-child(5) {
-          order: 3;
-        }
-        &:last-child {
-          order: 6;
-        }
+      &:nth-child(5) {
+        order: 3;
+      }
+      &:last-child {
+        order: 6;
       }
     }
   }

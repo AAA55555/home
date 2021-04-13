@@ -44,6 +44,7 @@
       flex-direction: column;
       .logo {
         &__link {
+          align-self: center;
           max-width: 199px;
           width: 100%;
           img {
@@ -52,19 +53,38 @@
           div {
             font-size: 12px;
             line-height: 20px;
+            margin-top: 5px;
+            span {
+              font-size: 12px;
+              line-height: 20px;
+              opacity: 0.8;
+            }
           }
         }
       }
       .phone {
         &__wrapper {
+          margin-top: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
           .phone {
-            font-size: 35px;
+            font-size: 24px;
+            line-height: 32px;
           }
           span {
+            margin-top: 0;
             font-size: 14px;
             line-height: 22px;
+            display: block;
           }
         }
+      }
+    }
+    &__items {
+      &-wrapper {
+        margin-top: 25px;
       }
     }
   }
@@ -75,11 +95,65 @@
     max-width: 540px;
     width: 100%;
   }
-}
-
-@media (min-width: 320px) and (max-width: 575px) {
-  .container {
-    min-width: 290px;
-    width: 100%;
+  .footer {
+    &__wrapper {
+      flex-direction: column;
+      .logo {
+        &__link {
+          align-self: center;
+          max-width: 199px;
+          width: 100%;
+          img {
+            width: 100%;
+          }
+          div {
+            font-size: 12px;
+            line-height: 20px;
+            margin-top: 5px;
+            span {
+              font-size: 12px;
+              line-height: 20px;
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+      .phone {
+        &__wrapper {
+          margin-top: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          .phone {
+            font-size: 24px;
+            line-height: 32px;
+          }
+          span {
+            margin-top: 0;
+            font-size: 14px;
+            line-height: 22px;
+            display: block;
+          }
+        }
+      }
+    }
+    &__items {
+      &-wrapper {
+        margin-top: 13px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-self: center;
+      }
+    }
+    &__item {
+      text-align: center;
+      margin-left: 0;
+      li {
+        padding-top: 12px !important;
+      }
+    }
   }
 }
+
+

@@ -1,0 +1,27 @@
+@media (min-width: 992px) {
+  .advantage {
+    .container {
+      padding: 0 0;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 700px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .container {
+    min-width: 290px;
+    width: 100%;
+  }
+}

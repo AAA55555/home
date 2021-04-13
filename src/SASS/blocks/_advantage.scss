@@ -6,10 +6,11 @@
   &__wrapper-items {
     margin-top: 50px;
     display: grid;
-    grid-template: repeat(2, minmax(270px, auto)) / repeat(3, 370px);
-    grid-auto-columns: repeat(3, 370px);
-    grid-auto-rows: repeat(2, 270px);
+    grid-template: repeat(2, minmax(270px, auto)) / repeat(auto-fit, minmax(290px, 370px));
+    grid-auto-columns: 370px;
+    grid-auto-rows: minmax(270px, auto);
     gap: 30px 30px;
+    justify-content: center;
   }
 
   // .advantage__item
