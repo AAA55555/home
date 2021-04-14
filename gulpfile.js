@@ -23,10 +23,10 @@ gulp.task('styles', function () {
   return gulp
     .src('src/sass/**/*.+(scss|sass)')
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+    .pipe(gcmq())
     .pipe(rename({ suffix: '.min', prefix: '' }))
     .pipe(autoprefixer())
     .pipe(cleanCSS({ compatibility: 'ie8' }))
-    .pipe(gcmq())
     .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.stream());
 });

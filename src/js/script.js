@@ -1,4 +1,3 @@
-
 window.addEventListener('DOMContentLoaded', function () {
   // Accordion
 
@@ -73,11 +72,4 @@ window.addEventListener('DOMContentLoaded', function () {
       menu.classList.toggle('menu_active');
     });
   });
-
-  //swiper
-
-  const swiper = document.querySelector('.swiper-container').swiper;
-
-// Now you can use all slider methods like
-swiper.slideNext();
 });

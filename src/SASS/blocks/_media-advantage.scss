@@ -17,6 +17,42 @@
     max-width: 540px;
     width: 100%;
   }
+  .advantage {
+    margin-top: 70px;
+    .title_fz40 {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    .title_fz20 {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 15px;
+    }
+    &__wrapper-items {
+      margin-top: 30px;
+      grid-template: repeat(2, minmax(270px, auto)) / repeat(auto-fit, 290px);
+      .title_fz20 {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+    &__item {
+      grid-template: 70px auto/70px 175px;
+      gap: 15px 15px;
+      padding: 15px 15px;
+      .list {
+        li {
+          line-height: 22px;
+          font-size: 14px;
+        }
+      }
+    }
+    // .advantage__item
+
+    .divider {
+      margin-top: 15px;
+    }
+  }
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
